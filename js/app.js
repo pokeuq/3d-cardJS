@@ -3,8 +3,8 @@ const pre = document.querySelector("pre");
 document.addEventListener("mousemove", (e) => {
   rotateElement(e, pre);
 });
-document.addEventListener("mousemove", (e) => {
-  rotateElement(e.touches[0], pretouches.touches[0]);
+document.addEventListener("mousemove", (e.touches[0]) => {
+  rotateElement(e.touches[0], pre.touches[0]);
 });
 
 function rotateElement(event, element) {
