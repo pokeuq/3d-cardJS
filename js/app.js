@@ -4,7 +4,7 @@ document.addEventListener("mousemove", (e) => {
   rotateElement(e, pre);
 });
 document.addEventListener("mousemove", (e) => {
-  rotateElement(e.touches[0], pre);
+  rotateElement(e.touches[0], pretouches.touches[0]);
 });
 
 function rotateElement(event, element) {
