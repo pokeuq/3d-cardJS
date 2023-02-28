@@ -3,6 +3,9 @@ const pre = document.querySelector("pre");
 document.addEventListener("mousemove", (e) => {
   rotateElement(e, pre);
 });
+document.addEventListener("mousemove", (e) => {
+  rotateElement(e.touches[0], pre);
+});
 
 function rotateElement(event, element) {
   // get mouse position
